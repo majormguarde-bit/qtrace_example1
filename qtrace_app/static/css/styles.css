@@ -1,0 +1,98 @@
+body {
+    background: #0b1018;
+    color: #f4f8ff;
+}
+
+.card {
+    background: #121c2b;
+    border: 1px solid #3c4d67;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.28);
+}
+
+.metric {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.muted-label {
+    color: #c8d8ee;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.small-note {
+    color: #d2e1f5;
+    font-size: 0.95rem;
+}
+
+.state-chip {
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.state-NORM {
+    background: #145432;
+    color: #c9ffdd;
+}
+
+.state-IMBALANCE {
+    background: #66500b;
+    color: #fff1ba;
+}
+
+.state-BEARING_FAULT {
+    background: #7b1e2a;
+    color: #ffd2d8;
+}
+
+.state-ANOMALY {
+    border: 1px solid #ff6c7c;
+    box-shadow: 0 0 16px rgba(255, 108, 124, 0.35);
+}
+
+.btn-mode {
+    min-width: 150px;
+    font-weight: 700;
+}
+
+.table-dark {
+    --bs-table-bg: #132032;
+    --bs-table-striped-bg: #1a2a40;
+    --bs-table-hover-bg: #223650;
+    --bs-table-color: #eff5ff;
+    --bs-table-border-color: #486082;
+}
+
+.table-dark thead th {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.hint-card {
+    background: #0f1a2a;
+    border: 1px solid #4a5e7d;
+}
+
+.hint-title {
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.hint-text {
+    color: #dce8f8;
+    margin-bottom: 0.4rem;
+}
+
+.hint-badge {
+    background: #284569;
+    color: #f3f8ff;
+    border: 1px solid #6f91bb;
+}
+
+.chart-wrap {
+    height: 380px;
+}
