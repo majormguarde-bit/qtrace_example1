@@ -12,8 +12,8 @@
     <div class="container-fluid py-4 px-4">
         <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-4">
             <div>
-                <h2 class="mb-1">QTrace Operator Monitor</h2>
-                <div class="small-note">Сквозной демонстратор предиктивной аналитики роторного оборудования</div>
+                <h2 class="mb-1 text-primary">QTrace Operator Monitor v2.0</h2>
+                <div class="small-note text-info">Сквозной демонстратор предиктивной аналитики роторного оборудования (venv active)</div>
             </div>
             <div class="d-flex gap-2">
                 <button class="btn btn-success btn-mode" onclick="setMode('NORM')">Норма</button>
@@ -125,7 +125,44 @@
                 </div>
             </div>
         </div>
+
+        <footer class="mt-5 pb-5 border-top border-secondary pt-4 bg-dark bg-opacity-10">
+            <div class="row g-4 px-3">
+                <div class="col-12 col-md-6">
+                    <h5 class="text-primary mb-3">Поясняющие материалы</h5>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="{{ url_for('static', filename='img/1.png') }}" target="_blank" class="footer-link">
+                            <i class="bi bi-image"></i> Схема архитектуры QTrace (1.png)
+                        </a>
+                        <a href="{{ url_for('static', filename='img/2.png') }}" target="_blank" class="footer-link">
+                            <i class="bi bi-image"></i> Принципы фильтрации Калмана (2.png)
+                        </a>
+                        <a href="{{ url_for('static', filename='img/qtrace.pptx') }}" download class="footer-link">
+                            <i class="bi bi-file-earmark-ppt"></i> Презентация проекта (qtrace.pptx)
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h5 class="text-primary mb-3">Контакты разработчика</h5>
+                    <div class="d-flex flex-column gap-2">
+                        <div class="footer-text">
+                            <strong>Email:</strong> <a href="mailto:majorm@ya.ru" class="footer-link">majorm@ya.ru</a>
+                        </div>
+                        <div class="footer-text">
+                            <strong>GitHub:</strong> <a href="https://github.com/majormguarde-bit/qtrace_example1.git" target="_blank" class="footer-link">https://github.com/majormguarde-bit/qtrace_example1.git</a>
+                        </div>
+                        <div class="footer-text">
+                            <strong>Support:</strong> +7 (950) 270-28-47 (Пн-Пт, 10:00-18:00)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4 small-note opacity-50">
+                &copy; 2026 QTrace Monitor. Все права защищены.
+            </div>
+        </footer>
     </div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
 </body>
 </html>

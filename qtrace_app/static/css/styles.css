@@ -96,3 +96,31 @@ body {
 .chart-wrap {
     height: 380px;
 }
+
+.footer-link {
+    color: #a8c1e6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 0.92rem;
+}
+
+.footer-link:hover {
+    color: #3d8bfd;
+    text-decoration: underline;
+}
+
+.footer-text {
+    color: #d2e1f5;
+    font-size: 0.92rem;
+}
+
+footer {
+    position: relative;
+    z-index: 10;
+    clear: both;
+}
+
+footer .bi {
+    margin-right: 6px;
+    color: #3d8bfd;
+}
